@@ -1,6 +1,9 @@
 body{
     font-family: Arial;
     color: black;
+/*
+A prioridade é o #, depois o ponto (.), depois a classe normal, tipo body, footer
+*/
 }
 #id1{
     font-family: Verdana;
