@@ -1,0 +1,72 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 80vw;
+    height: 80vh;
+}
+
+ul {
+    list-style-type: none;
+    width: 80%;
+    height: 80%;
+    background-color:rgb(83, 80, 80);
+}
+
+li a{
+    display: black;
+    color: black;
+    width: 80%;
+    text-decoration: none;
+    text-align: center;
+}
+
+li a:hover{
+    color:white;
+    background-color: #555;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display:grid; 
+    grid-template-areas: "h h" "r l" "f f"; 
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 2vh;
+}
+.header{
+    background-color:rgb(250, 228, 104);
+    grid-area: 55vh;
+}
+.conteudo{
+
+    background-color: rgb(252, 120, 120);
+    grid-area: l;
+}
+
+.barraNavegacao{
+    background-color: rgb(161, 241, 161);
+    grid-area: r;
+}
+
+.footer{
+    background-color: rgb(153, 153, 250);
+    grid-area: f;
+}
+
+
+/*Aplicação de estilos para links na pagina*/
+a{
+    color:rgb(83, 80, 80)
+
+}
+
+a:hover{
+    color: white;
+
+}
