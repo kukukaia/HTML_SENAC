@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap");
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vw;
+    justify-content: center;
+    background-color:chartreuse;
+    overflow-x: hidden;
+}
+header{
+    /*Header contem div logo e dic menu com a lista de links*/
+    display: flex;
+    justify-content: space-between;
+    background-color:rgb(39, 188, 46);
+    border: 1px solid red;
+    height: 200px;
+    position: fixed;
+    width: 100vw;
+}
+.container{
+    padding-top:220px;
+    width:auto;
+
+    background-color:chartreuse;
+    text-align: justify;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+img{
+    width: 400px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.container img:hover{
+    width: 420px;
+    transition: 200ms;
+}
+.logo img{
+    width: 65px;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    text-align: center;
+    padding-right: 60px;
+    justify-content: space-between;
+}
+a{
+    /*Estilo dos links*/
+    text-decoration: none;
+    font-family: 'Grape Nuts', cursive;
+    font-size: xx-large;
+    transition: 200ms;
+}
+a:hover{
+    color: blue;
+    background-color: coral;
+    border-radius: 4px;
+}
+#foto{
+    width: 800px;
+}
+#foto:hover{
+    width: 820px;
+    transition: 200ms;
+}

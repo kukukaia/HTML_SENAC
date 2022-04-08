@@ -23,6 +23,7 @@ div.container{
     /*Alinhamento dos elementos*/
     /*justify-content: space-between;*/
     justify-content: space-evenly;
+    
 
     /*horizontal*/
     align-items: center;
