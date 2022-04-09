@@ -1,4 +1,4 @@
-Este repositório foi criado para postar todas as atividades sobre HTML, realizadas no curso de Programador Web do SENAC-Uberaba.
+Este repositório foi criado para postar todas as atividades sobre HTML, realizadas no curso de Programador Web do SENAC-Uberaba. Professor Rossi Neto (github.com/rossisneto)
 
 1a atividade: fizemos as primeiras páginas html, que são os arquivos:
 - first_html.html
