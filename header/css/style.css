@@ -16,12 +16,13 @@ body{
 header{
     /*Header contem div logo e dic menu com a lista de links*/
     display: flex;
-    justify-content: space-between;
     background-color:rgb(39, 188, 46);
     border: 1px solid red;
     height: 200px;
     position: fixed;
     width: 100vw;
+    justify-content: space-evenly;
+
 }
 .container{
     padding-top:220px;
@@ -37,6 +38,7 @@ header{
     flex-wrap: wrap;
 }
 img{
+    
     width: 400px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -47,6 +49,8 @@ img{
 }
 .logo img{
     width: 65px;
+    display: block;
+    justify-content: center;
 }
 .menu ul{
     list-style: none;
