@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: #fff;
@@ -10,68 +11,86 @@ body{
     font-size: 15px;
     line-height: 1.5;
 }
+
 .container{
     /*para afastar da lateral*/
     margin: auto;
     width: 90%;
     /*Por padrão, é bom usar essa max-width pra não distorcer o conteúdo*/
-    max-width: 1100px;
+    max-width: 1200px;
     font-size: 13px;
 }
+
+/*Barra de navegação*/
+
 .barraPrincipal{
     display:flex;
     align-items: center;
     justify-content: space-between;
     height: 60px;
     padding: 20px 0;
-    font-size: 13px;
+    /*Esse puxou os elementos para a esquerda*/
+    float: left;
 }
+
 .barraPrincipal img{
     /*para formatar a imagem que esta dentro de barra principal*/
     height: 3.55vh;
-    padding: 0 20px;
+    padding: 0 12px;
 }
+
 .barraPrincipal ul{
     /*tirar a decoração de lista, ai tem que especificar com o ul*/
     list-style: none;
     /*colocar em linha, a lista*/
     display: flex;
-    padding-right: 200px;
+    
 }
+
 .barraPrincipal a{
     /*tirar a decoração de link, ai tem que especificar com o a*/
     text-decoration: none;
     color: #262626;
     padding-left: 20px;
-    
 }
-.barraPrincipal a:hover{
+
+#links:hover{
+    /*Falta CORRIGIR porque a linha não acompanha o texto*/
     border-bottom: 2px solid #262626;
 }
-.menuDireito{
-    margin: 1px 5px 0px 0px;
-    padding: 0px 0px 10px 10px;
+
+#link2:hover{
+    /*Falta CORRIGIR porque a linha não acompanha o texto*/
+    border-bottom: 2px solid #262626;
 }
+
+.menuDireito{
+    position: absolute;
+    padding-right: 40px;
+    top: 20px;
+    right:30px;
+}
+
 .showcase{
     /*Tem que colocar a altura e a largura para a imagem aparecer*/
     display: flex;
     width: 100%;
-    height: 445px;
+    height: 440px;
     background: url('/microsoft/img/primeiraImagem.webp') no-repeat center center/cover;
     color: #fff;
-    padding: 30px;
+    padding: 44px;
+    padding-top: 40px;
     align-items: center;
     line-height: 20px;
     
 }
 .showcase div{
     /*para delimitar o tamanho do texto*/
-    width: 40%;
+    width: 45%;
 }
 .showcase h2{
-    font-size: 24px;
-    margin: -4px 0px 0px;
-    padding: 0px 0px 3px;
+    font-size: 22px;
+    padding-left: 30px;
 }
 .showcase p{
     font-size: 15px;
@@ -81,27 +100,41 @@ body{
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    padding-bottom: 15px;
+    padding-left: 30px;
 }
 .showcase a{
+    font-size: 15px;
+    font-weight: bold;
     text-decoration: none;
     color: #262626;
     background-color: white;
-    padding: 10px 20px;
+    
+    padding: 12px 20px 12px 20px;
+    margin-left: 30px;
+    max-width: 100%;
+    display: inline-block;
+}
+#botao:hover{
+    text-decoration: underline;
+    font-size: 15.5px;
+    /*Modificar hover*/
 }
 .links{
+    font-weight: bold;
     display: flex;
-    width: 100%;
+    width: 98%;
     justify-content: center;
     /*Esse elemento coloca as distâncias entre os elementos*/
     padding: 20px;
 }
 .links div{
     display: flex;
-    margin: 12px 6px;
+    margin: 40px 0px 30px 20px;
 }
 .links a{
     font-size: 15px;
-    margin: -4px 21px 0px 22px;
+    margin: 5px 18px 0px 60px;
     text-decoration: none;
     color: #262626;
     text-align: center;
@@ -118,9 +151,16 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     /*pra dar o espaçamento entre as colunas*/
-    gap: 10px;
+    gap:  10px;
     font-size: 15px;
     color: #000000;
+    text-align:left;
+}
+.cards h2{
+    font-size: 20px;
+}
+.cards p{
+    padding-right: 20px;
 }
 .cards div{
     width: 100%;
@@ -132,4 +172,29 @@ body{
     text-decoration: none;
     color: #0067B8;
     font-size: 15px;
+    font-weight: bold;
+}
+.poster{
+    background: url('/microsoft/img/outlookIosAndroid.webp') no-repeat center center/cover;
+    display: flex;
+    width: 100%;
+    height: 440px;
+    color: black;
+    padding-top: 40px;
+    padding-left: 60px;
+    margin-top: 60px;
+    align-items: center;
+    line-height: 20px;
+    margin-bottom: 400px;
+}
+.poster div{
+    width: 45%;
+
+}
+.poster h2{
+    font-size: 24px;
+}
+.poster p{
+    font-size: 15px;
+    
 }
