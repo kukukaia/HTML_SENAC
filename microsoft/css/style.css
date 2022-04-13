@@ -177,24 +177,61 @@ body{
 .poster{
     background: url('/microsoft/img/outlookIosAndroid.webp') no-repeat center center/cover;
     display: flex;
+    width: 45%;
     width: 100%;
     height: 440px;
     color: black;
-    padding-top: 40px;
-    padding-left: 60px;
     margin-top: 60px;
     align-items: center;
-    line-height: 20px;
-    margin-bottom: 400px;
-}
-.poster div{
-    width: 45%;
-
+    margin-bottom: 40px;
+    padding: 70px;
 }
 .poster h2{
     font-size: 24px;
 }
-.poster p{
-    font-size: 15px;
+.poster a{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    font-weight: bold;
+    color:white;
+    background-color: black;
     
+    padding: 12px 20px 12px 20px;
+    margin-top: 20px;
+    
+    max-width: 100%;
+    display: inline-block;
+}
+.poster p{
+    font-size: 16px;
+    margin-top: 10px;
+}
+.tituloNegocios{
+    font-size: 16px;
+    font-weight: bolder;
+    padding-bottom: 20px;
+}
+.negocios{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /*pra dar o espaçamento entre as colunas*/
+    gap:  10px;
+    font-size: 15px;
+    color: #000000;
+    text-align:left;
+}
+.negocios h2{
+    font-size: 20px;
+    padding-top: 25px;
+    
+}
+.negocios p{
+}
+.negocios a{
+    text-decoration: none;
+    color: #0067B8;
+    font-size: 15px;
+    font-weight: bold;
 }
