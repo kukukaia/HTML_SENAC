@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
@@ -69,4 +70,150 @@ a{
 a:hover{
     color: white;
 
+=======
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* Para estabelecer um padrão, de forma que qq navegador consiga entender, por questão de prática*/
+    margin: 0;
+    padding: 0;
+}
+/*montar um grid com 9 divisões, cores diferentes, ocupando no total 80% da area visivel, estabelecendo gap entre os elementos*/
+
+body{
+    /*o corpo da página vai ocupar 100% da área visível, mas por questão de responsividade, usamos a medida de viewport vw/vh*/
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+.container{
+    width: 80vw;
+    height: 80vh;
+    background-color: aliceblue;
+    /*A partir daqui vamos definir a disposição dos elementos na página.*/
+    display:grid; 
+
+    /*Delimitando 3 linhas e 3 colunas*/
+    grid-template-areas: "a1 a2 a3" "b1 b2 b3" "c1 c2 c3";
+
+    /*Proporção de espaço de cada linha*/
+    grid-template-rows: 30% 30% 30%;
+
+    /*Proporção de espaço de cada coluna*/
+    grid-template-columns: 30% 30% 30%;
+
+    gap: 1vh;
+
+    justify-content:center;
+    margin-top: 3vw;
+    margin-right: 3vw;
+    margin-left: 3vw;
+    margin-bottom: 3vw;
+    padding:5vw;
+    padding-bottom: 1vw;;
+}
+.numero1{
+    grid-area: a1;
+    padding: 1px;
+    padding-top: 40px;
+    font-size: x-large;
+    text-align: center;
+    background-color: rgb(249, 249, 154);
+}
+.numero2{
+    grid-area: a2;
+    padding: 1px;
+    padding-top: 40px;
+    font-size: x-large;
+    text-align: center;
+    background-color: pink;
+}
+.numero3{
+    grid-area: a3;
+    padding: 1px;
+    padding-top: 40px;
+    font-size: x-large;
+    text-align: center;
+    background-color: rgb(126, 235, 139);
+}
+.numero4{
+    grid-area: b1;
+    padding: 1px;
+    padding-top: 40px;
+    font-size: x-large;
+    text-align: center;
+    background-color: rgb(157, 249, 240);
+}
+.numero5{
+    grid-area: b2;
+    padding: 1px;
+    padding-top: 40px;
+    font-size: x-large;
+    text-align: center;
+    background-color: rgb(251, 176, 126);
+}
+.numero6{
+    grid-area: b3;
+    padding: 1px;
+    padding-top: 40px;
+    font-size: x-large;
+    text-align: center;
+    background-color: rgb(137, 135, 247);
+}
+.numero7{
+    grid-area: c1;
+    padding: 1px;
+    padding-top: 40px;
+    font-size: x-large;
+    text-align: center;
+    background-color: rgb(249, 168, 237);
+}
+.numero8{
+    grid-area: c2;
+    padding: 1px;
+    padding-top: 40px;
+    font-size: x-large;
+    text-align: center;
+    background-color: rgb(209, 255, 141);
+}
+.numero9{
+    grid-area: c3;
+    padding: 1px;
+    padding-top: 40px;
+    font-size: x-large;
+    text-align: center;
+    background-color: rgb(250, 151, 151);
+}
+
+
+
+/*Aplicação de estilos para links na pagina*/
+/*a{
+    color:rgb(83, 80, 80)
+
+}
+
+a:hover{
+    color: white;
+
+}
+
+ul {
+    list-style-type:none;
+    width: 100%;
+    height: 100%;
+     background-color:rgb(83, 80, 80);
+}
+
+li a{
+    display: black;
+    color: black;
+    width: 80%;
+    text-decoration: none;
+    text-align: center;
+}
+
+li a:hover{
+    color:white;
+    background-color: #555;
+>>>>>>> efcf7c9d4b3d5d68d59acc55dd74bed6339de01f
 }
