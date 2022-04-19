@@ -18,7 +18,6 @@ body{
     width: 90%;
     /*Por padrão, é bom usar essa max-width pra não distorcer o conteúdo*/
     max-width: 1200px;
-    font-size: 13px;
 }
 
 /*Barra de navegação*/
