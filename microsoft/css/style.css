@@ -54,14 +54,13 @@ body{
     padding-left: 20px;
 }
 
-#links:hover{
-    /*Falta CORRIGIR porque a linha não acompanha o texto*/
+.barraPrincipal div a:hover{
     border-bottom: 2px solid #262626;
 }
 
-#link2:hover{
-    /*Falta CORRIGIR porque a linha não acompanha o texto*/
-    border-bottom: 2px solid #262626;
+.barraPrincipal div a:active{
+    outline: 1.5px dashed black;
+    padding: 15px; 
 }
 
 .menuDireito{
@@ -82,16 +81,19 @@ body{
     padding-top: 40px;
     align-items: center;
     line-height: 20px;
-    
+
 }
+
 .showcase div{
     /*para delimitar o tamanho do texto*/
     width: 45%;
 }
+
 .showcase h2{
     font-size: 22px;
     padding-left: 30px;
 }
+
 .showcase p{
     font-size: 15px;
     text-align: justify;
@@ -103,6 +105,7 @@ body{
     padding-bottom: 15px;
     padding-left: 30px;
 }
+
 .showcase a{
     font-size: 15px;
     font-weight: bold;
@@ -217,7 +220,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     /*pra dar o espaçamento entre as colunas*/
-    gap:  10px;
+    gap:  12px;
     font-size: 15px;
     color: #000000;
     text-align:left;
@@ -225,13 +228,45 @@ body{
 .negocios h2{
     font-size: 20px;
     padding-top: 25px;
+    padding-right: 20px;
     
 }
 .negocios p{
+    padding-right: 20px;
 }
 .negocios a{
     text-decoration: none;
     color: #0067B8;
     font-size: 15px;
     font-weight: bold;
+}
+
+/*responsividade*/
+@media screen and (max-width: 700px){
+    .cards, .negocios{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .links{
+        flex-direction: column;
+        align-items: center;
+    }
+    .barraPrincipal ul{
+        display: none;
+    }
+    .barraPrincipal{
+        justify-content: center;
+    }
+    .showcase {
+        display: none;
+    }
+    
+
+}
+@media screen and (max-width: 500px) {
+    .cards{
+        grid-template-columns: 1fr;
+    }
+ 
 }
